@@ -141,7 +141,7 @@ __interrupt void Port1_ISR(void)
         objectcount++;
     }
 
-    P1IFG &= BIT4;
+    P1IFG &= ~BIT4;
 }
 
 #pragma vector=PORT2_VECTOR
